@@ -24,19 +24,19 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #191919;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #191919;
-    --foreground: #ededed;
-  }
+  --background: #191919;
+  --foreground: #afaeae;
+  --accent-color: #0ff;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+#glowing-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 120px 60px #0ff;
 }
