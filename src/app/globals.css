@@ -25,18 +25,13 @@
 
 :root {
   --background: #191919;
-  --foreground: #afaeae;
-  --accent-color: #0ff;
+  --foreground: #e8e8e8;
+  --accent-color: rgb(88, 36, 207);
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-}
-
-#glowing-circle {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  box-shadow: 0 0 120px 60px #0ff;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
