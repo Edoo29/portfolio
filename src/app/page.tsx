@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero className="mt-40" />
+      <Hero className="mt-10 md:mt-40" />
     </>
   );
 }

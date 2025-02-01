@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <LoadAnimation>
-      <nav className="text-[var(--grey)] flex justify-center mx-auto fixed z-10 top-0 left-1/2 transform -translate-x-1/2 p-3 mt-5 border-glass rounded-xl backdrop-blur-md">
+      <nav className="hidden md:flex text-[var(--grey)] justify-center mx-auto fixed z-10 top-0 left-1/2 transform -translate-x-1/2 p-3 mt-5 border-glass rounded-xl backdrop-blur-md">
         <ul className="flex gap-7">
           {navbarItems.map((item) => (
             <li key={item.label} className="hover:text-white transition-all">

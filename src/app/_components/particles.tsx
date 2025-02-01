@@ -18,7 +18,7 @@ export default function Particle({ delay }: { delay: number }) {
       animate={{ x: `${x}%`, y: `${y}%`, opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.2, ease: "easeInOut" } }}
       transition={{
-        duration: 3,
+        duration: 1.5,
         ease: "easeInOut",
         repeat: Infinity,
         repeatType: "reverse",

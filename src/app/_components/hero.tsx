@@ -29,7 +29,7 @@ export default function Hero({ className }: { className?: string }) {
           <span className="text-gradient">Design that works,</span>
           <span className="text-gradient">experiences that captivate.</span>
         </p>
-        <p className="flex flex-col justify-center items-center gap-1 mt-5 text-[var(--grey)]">
+        <p className="flex flex-col justify-center items-center gap-1 mt-5 text-[var(--grey)] p-5 text-center md:p-0">
           <span>
             As a frontend developer, I create visually stunning,
             high-performance websites that work seamlessly on any device.
