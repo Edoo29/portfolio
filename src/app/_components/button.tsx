@@ -11,7 +11,7 @@ interface ButtonProps {
 export default function Button({ children, className, variant }: ButtonProps) {
   return (
     <motion.button
-      className={`px-5 py-3 rounded-xl shadow-md cursor-pointer glowing-effect transition-all ${
+      className={`px-5 py-3 rounded-xl shadow-md border-glass cursor-pointer glowing-effect transition-all ${
         variant ? "bg-[var(--blue)]" : "bg-[var(--purple)]"
       } ${className}`}
     >
