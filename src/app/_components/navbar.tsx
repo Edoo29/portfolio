@@ -1,3 +1,5 @@
+"use client";
+
 import LoadAnimation from "./load-animation";
 
 interface NavbarItems {
