@@ -22,8 +22,12 @@ export default function Hero({ className, id }: HeroProps) {
           Hi, I am Edoardo
         </h1>
         <p className="text-5xl md:text-7xl flex flex-col gap-2 justify-center text-center">
-          <span className="text-gradient">Design that works,</span>
-          <span className="text-gradient">experiences that captivate.</span>
+          <span className="text-gradient text-glowing transition-all">
+            Design that works,
+          </span>
+          <span className="text-gradient text-glowing transition-all">
+            experiences that captivate.
+          </span>
         </p>
         <p className="text-lg md:text-xl flex flex-col justify-center items-center gap-1 mt-5 text-[var(--grey)] p-5 text-center md:p-0">
           <span>

@@ -50,6 +50,11 @@ body {
   box-shadow: 0 0 30px #9a76ff;
 }
 
+.text-glowing:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff;
+}
+
 .border-glass {
   @apply border-2 border-solid border-[rgba(255,255,255,0.2)];
 }
@@ -61,22 +66,4 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
-}
-
-.box {
-  width: 150px;
-  height: 150px;
-  border-radius: 1em;
-  background-color: #f9f07e;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.magic {
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
