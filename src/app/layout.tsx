@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { roboto } from "./fonts";
+import CustomCursor from "./_components/custom-cursor";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -14,7 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>{children}</body>
+      <body
+        className={`${roboto.className} antialiased`}
+        data-cursor-color="var(--purple)"
+      >
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

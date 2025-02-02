@@ -19,7 +19,7 @@ export default function LoadAnimation({
           whileInView={{
             opacity: 1,
             y: 0,
-            transition: { duration: 0.2, delay: delay },
+            transition: { duration: 0.4, delay: delay },
           }}
         >
           {children}
@@ -30,7 +30,7 @@ export default function LoadAnimation({
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 0.2, delay: delay },
+            transition: { duration: 0.4, delay: delay },
           }}
         >
           {children}
