@@ -14,11 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${roboto.className} antialiased`}
-        data-cursor-color="var(--purple)"
-      >
+    <html lang="en" data-cursor-color="var(--purple)">
+      <body className={`${roboto.className} antialiased`}>
         <CustomCursor />
         {children}
       </body>

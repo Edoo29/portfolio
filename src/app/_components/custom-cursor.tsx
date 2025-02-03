@@ -6,7 +6,7 @@ import "react-creative-cursor/dist/styles.css";
 export default function CustomCursor() {
   return (
     <>
-      <Cursor isGelly={true} data-cursor-color="var(--blue)" />
+      <Cursor isGelly={true} data-cursor-color="var(--purple)" />
     </>
   );
 }
