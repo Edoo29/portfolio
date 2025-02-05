@@ -9,7 +9,7 @@ export default function Arrow({ children, className }: ArrowProps) {
   return (
     <a
       href="#about"
-      className={`flex gap-1 cursor-pointer hover:underline ${className}`}
+      className={`hidden md:flex gap-1 cursor-pointer hover:underline ${className}`}
     >
       <MoveDown />
       {children}

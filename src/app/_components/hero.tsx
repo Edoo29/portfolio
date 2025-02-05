@@ -4,16 +4,11 @@ import Button from "./button";
 import LoadAnimation from "./load-animation";
 import Arrow from "./arrow";
 
-interface HeroProps {
-  className?: string;
-  id?: string;
-}
-
-export default function Hero({ className, id }: HeroProps) {
+export default function Hero({ className }: { className?: string }) {
   return (
     <LoadAnimation delay={0.2} animateWhenVisible>
       <div
-        id={id}
+        id="home"
         className="flex flex-col gap-3 justify-center mx-auto items-center relative mb-10"
       >
         <h1 className={`text-[var(--purple)] text-xl ${className}`}>

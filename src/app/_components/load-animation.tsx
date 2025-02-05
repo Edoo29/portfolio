@@ -2,15 +2,17 @@
 
 import { motion } from "motion/react";
 
+interface LoadAnimationProps {
+  children: React.ReactNode;
+  delay?: number;
+  animateWhenVisible?: boolean;
+}
+
 export default function LoadAnimation({
   children,
   delay,
   animateWhenVisible,
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  animateWhenVisible?: boolean;
-}) {
+}: LoadAnimationProps) {
   return (
     <>
       {animateWhenVisible ? (
