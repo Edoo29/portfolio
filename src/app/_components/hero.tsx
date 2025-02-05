@@ -1,8 +1,8 @@
 "use client";
 
 import Button from "./button";
-import useParticles from "../_hooks/useParticles";
 import LoadAnimation from "./load-animation";
+import Arrow from "./arrow";
 
 interface HeroProps {
   className?: string;
@@ -10,8 +10,6 @@ interface HeroProps {
 }
 
 export default function Hero({ className, id }: HeroProps) {
-  const particles = useParticles();
-
   return (
     <LoadAnimation delay={0.2} animateWhenVisible>
       <div
@@ -45,7 +43,11 @@ export default function Hero({ className, id }: HeroProps) {
             <Button variant>See my work</Button>
           </div>
         </LoadAnimation>
-        {particles}
+        <LoadAnimation delay={0.7} animateWhenVisible>
+          <Arrow className="text-[var(--purple)] mt-20">
+            Read more about me
+          </Arrow>
+        </LoadAnimation>
       </div>
     </LoadAnimation>
   );
