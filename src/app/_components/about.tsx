@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import LoadAnimation from "./load-animation";
+import Arrow from "./arrow";
 
 interface ImageBoxProps {
   idx: number;
@@ -54,7 +55,7 @@ export default function About({ className }: { className?: string }) {
   return (
     <div
       id="about"
-      className={`mt-[calc(100vh-4rem)] flex flex-col justify-center text-center items-center gap-3 p-3 ${className}`}
+      className={`flex flex-col justify-center text-center items-center gap-3 p-3 ${className}`}
     >
       <LoadAnimation animateWhenVisible>
         <h2 className="text-4xl">About me</h2>
@@ -82,6 +83,15 @@ export default function About({ className }: { className?: string }) {
           <ImageBox key={idx} idx={idx} src={src} alt={alt} href={href} />
         ))}
       </div>
+      <LoadAnimation delay={0.5} animateWhenVisible>
+        <Arrow
+          direction="down"
+          className="text-[var(--purple)] mt-20"
+          reference="#projects"
+        >
+          Explore my projects
+        </Arrow>
+      </LoadAnimation>
     </div>
   );
 }

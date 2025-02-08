@@ -34,12 +34,20 @@ export default function Hero({ className }: { className?: string }) {
         </p>
         <LoadAnimation delay={0.5} animateWhenVisible>
           <div className="flex gap-5 mt-7">
-            <Button>Contact me</Button>
-            <Button variant>See my work</Button>
+            <Button>
+              <a href="#contact">Contact me</a>
+            </Button>
+            <Button variant>
+              <a href="#projects">See my work</a>
+            </Button>
           </div>
         </LoadAnimation>
         <LoadAnimation delay={0.7} animateWhenVisible>
-          <Arrow className="text-[var(--purple)] mt-20">
+          <Arrow
+            direction="down"
+            className="text-[var(--purple)] mt-20"
+            reference="#about"
+          >
             Read more about me
           </Arrow>
         </LoadAnimation>

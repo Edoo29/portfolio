@@ -1,17 +1,25 @@
-import { MoveDown } from "lucide-react";
+import { MoveDown, MoveUp } from "lucide-react";
 
 interface ArrowProps {
   children: React.ReactNode;
   className?: string;
+  reference?: string;
+  direction: "up" | "down";
 }
 
-export default function Arrow({ children, className }: ArrowProps) {
+export default function Arrow({
+  children,
+  className,
+  reference,
+  direction,
+}: ArrowProps) {
   return (
     <a
-      href="#about"
+      href={reference}
       className={`hidden md:flex gap-1 cursor-pointer hover:underline ${className}`}
     >
-      <MoveDown />
+      {direction === "up" ? <MoveUp /> : <MoveDown />}
+
       {children}
     </a>
   );
