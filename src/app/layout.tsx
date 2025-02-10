@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { roboto } from "./fonts";
-import Navbar from "./_components/navbar";
 
 export const metadata: Metadata = {
   title: "Portfolio",
