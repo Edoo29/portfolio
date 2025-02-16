@@ -50,6 +50,11 @@ export default function About({ className }: { className?: string }) {
       alt: "VSCode logo",
       href: "https://code.visualstudio.com/",
     },
+    {
+      src: "/neovim.png",
+      alt: "Neovim logo",
+      href: "https://neovim.io/"
+    }
   ];
 
   return (
